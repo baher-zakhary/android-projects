@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wholeListItem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/tan_background" />
+
+    <LinearLayout
+        android:id="@+id/textLinearLayout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/topText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:text="lutti"></TextView>
+
+        <TextView
+            android:id="@+id/bottomText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            tools:text="one"></TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/playImg"
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingRight="16dp"
+        android:src="@drawable/baseline_play_arrow_white_36"/>
+
+</LinearLayout>
