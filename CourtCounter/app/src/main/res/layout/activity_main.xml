@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/teamA_score"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="100sp" />
+
+            <Button
+                android:id="@+id/button_a3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="determineValue"
+                android:text="+3 Points" />
+
+            <Button
+                android:id="@+id/button_a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="determineValue"
+                android:text="+2 Points" />
+
+            <Button
+                android:id="@+id/button_aFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="determineValue"
+                android:text="Free throw" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/teamB_score"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="100sp" />
+
+            <Button
+                android:id="@+id/button_b3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="determineValue"
+                android:text="+3 Points" />
+
+            <Button
+                android:id="@+id/button_b2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="determineValue"
+                android:text="+2 Points" />
+
+            <Button
+                android:id="@+id/button_bFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="determineValue"
+                android:text="Free throw" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="reset"
+        android:text="Reset" />
+
+</RelativeLayout>
