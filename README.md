@@ -1,2 +1,2 @@
-# android-beginner-udacity-course-projects
+# Android Beginner Udacity Course Projects
 Android Beginner Udacity Course Projects
